@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ page.title }}</title>
+  <link rel="SHORTCUT ICON" type="image/ico" href="/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Undesigned" />
+  {% if page.url contains '/thoughts' %}
+    <link href="/atom.xml" rel="alternate" title="Undesigned" type="application/atom+xml" />
+  {% endif %}
+
+  <link rel="stylesheet" href="/css/main.css" type="text/css" />
+</head>
+<body>
+  <header><a href="/"><img src="/images/logo.png" width="326" height="67" alt="Undesigned" /></a></header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    {% if page.url contains '/thoughts' %}
+      <p>Thanks for reading! Subscribe to our <a href="/atom.xml">RSS</a>.</p>
+    {% else %}
+      <p>Made with <span class="heart">&hearts;</span> in Chicago.</p>
+    {% endif %}
+    <p id="navbar">
+      <a href="/" title="Learn about Undesigned">About</a>
+      <a href="/contact" title="Get in touch">Contact</a>
+      <a href="/thoughts" title="Read our thoughts on design, startups, and Chicago">Blog</a>
+      <a href="http://twitter.com/undesignedio" title="Follow @undesignedio on Twitter" target="_blank">Twitter</a>
+    </p>
+    <p>&copy; 2014 Undesigned. <span id="dayOfWeek"></span></p>
+  </footer>
+
+  <script type="text/javascript">
+    // update calendar icon to current date
+    (function() {
+      var d = new Date()
+      , dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      , hour = d.getHours()
+      , timeOfDay = "";
+      if (hour < 12)
+        timeOfDay = "morning";
+      else if (hour < 16)
+        timeOfDay = "afternoon";
+      else if (hour < 20)
+        timeOfDay = "evening";
+      else
+        timeOfDay = "night";
+
+      document.getElementById('dayOfWeek').innerHTML = "Happy " + dayNames[d.getDay()] + " " + timeOfDay + "!";
+    })();
+  </script>
+</body>
+</html>

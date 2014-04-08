@@ -1,0 +1,31 @@
+---
+layout: default
+title: Undesigned Thoughts
+---
+
+{% for post in paginator.posts %}
+  {% if post.published != false %}
+  <article>
+    <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    <div class="author">{{ post.author }} wrote this on {{ post.date | date: '%B %-d, %Y' }}.</div>
+    <div class="post_body">
+      {{ post.content }}
+    </div>
+    <hr/>
+  </article>
+  {% endif %}
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a id="newerPosts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}">&laquo; Newer posts</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a id="olderPosts" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}">Older posts &raquo;</a>
+  {% endif %}
+
+  <div class="clear"></div>
+</div>
+{% endif %}

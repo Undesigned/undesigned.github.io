@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article>
+  <div class="title">{{ page.title }}</div>
+  <div class="author">{{ page.author }} wrote this on {{ page.date | date: '%B %-d, %Y' }}.</div>
+  <div class="post_body">
+    {{ content }}
+
+    <p id="followme">Like this post? <a href="/thoughts">Check out our other posts</a> for more.</p>
+  </div>
+</article>

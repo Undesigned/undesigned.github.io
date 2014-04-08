@@ -1,0 +1,332 @@
+@import 'normalize.css';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Segoe UI", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #404040;
+  margin: 0 5%;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+main {
+  width: 100%;
+  min-width: 320px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Helvetica Neue", "HelveticaNeue", "Segoe UI", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: "Helvetica Neue", "Helvetica Neue Bold", "HelveticaNeue-Bold", "Segoe UI Bold", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+h4 {
+  font-family: "Helvetica Neue", "Helvetica Neue Bold", "HelveticaNeue-Bold", "Segoe UI Bold", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+h5 {
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  color: #999;
+}
+
+span.highlight {
+  background-color: #fcffa5;
+  padding: 3px;
+}
+
+a {
+  color: #10a0f2;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #095a88;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+span.heart {
+  color: #ed1c24;
+}
+
+footer p#navbar a {
+  margin: 0 10px;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+}
+
+/* Home page */
+
+ul#howitworks {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+ul#howitworks li, ul#team li {
+  list-style:none; /* Disable the normal item numbering */
+  float: left;
+  width: 30%;
+  margin: 0 1%;
+  padding: 0;
+}
+ul#howitworks li:first-child, ul#team li:first-child {
+  margin-left: 3%;
+}
+
+ul#howitworks img, ul#team img {
+  display: block;
+  margin: 0 auto;
+}
+ul#team img {
+  border-radius: 50px;
+}
+
+ul#team {
+  text-align: center;
+  margin: 40px 0;
+  padding: 0;
+}
+ul#team li {
+  margin-bottom: 60px;
+}
+
+ul#team h4 {
+  margin-top: 7px;
+}
+ul#team p {
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 5px 0 0 0;
+}
+
+div#calendar {
+  width: 98px;
+  height: 98px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+}
+
+div#calendar span#month {
+  background-color: #e01616;
+  color: #fff;
+  font-size: 17px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+
+div#calendar span#date {
+  display: block;
+  font-size: 42px;
+  color: #454545;
+  margin-top: 20px;
+}
+
+ol#philosophies {
+  counter-reset:philosophies; /* Initiate a counter */
+  margin-left:0; /* Remove the default left margin */
+  padding-left:0; /* Remove the default left padding */
+}
+
+ol#philosophies > li {
+  position:relative; /* Create a positioning context */
+  margin:0 0 20px 3em; /* Give each list item a left margin to make room for the numbers */
+  padding:4px 13px; /* Add some spacing around the content */
+  list-style:none; /* Disable the normal item numbering */
+}
+ol#philosophies > li:before {
+  content:counter(philosophies); /* Use the counter as content */
+  counter-increment:philosophies; /* Increment the counter by 1 */
+  position:absolute;
+  left:-2em;
+  top: 0.7em;
+  color:#fff;
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  background:#0ae37a;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  text-align:center;
+  line-height: 60px;
+}
+
+ol#philosophies p {
+  margin: 0;
+}
+
+div#cta {
+  width: 601px;
+  margin: 0 auto 100px auto;
+}
+div#vr {
+  width: 1px;
+  height: 70px;
+  float: left;
+  background-color: #ccc;
+  margin-left: 50px;
+  margin-top: 38px;
+}
+div#blog {
+  width: 250px;
+  height: 80px;
+  float: left;
+}
+div#contact {
+  width: 250px;
+  height: 80px;
+  float: right;
+}
+div#blog h4, div#contact h4 {
+  font-size: 20px;
+  text-align: center;
+}
+div#blog a, div#contact a {
+  display: block;
+  background-color: #ff820b;
+  width: 220px;
+  height: 70px;
+  border-radius: 5px;
+  font-family: "Helvetica Neue", "Helvetica Neue Bold", "HelveticaNeue-Bold", "Segoe UI Bold", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 70px;
+  margin: 5px auto;
+}
+div#contact a {
+  background-color: #0ae37a;
+}
+div#contact a:hover {
+ background-color: #08b260; 
+}
+div#blog a:hover {
+ background-color: #d76900; 
+}
+
+/* Blog */
+
+article .title {
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  padding: 10px;
+}
+
+article .title a {
+  color: #404040;
+  text-decoration: none;
+}
+article .title a:hover {
+  color: #10a0f2;
+}
+
+article .author {
+  font-family: "Helvetica Neue", "Helvetica Neue Light", "HelveticaNeue-Light", "Segoe UI Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  margin: 20px 0 30px 0;
+}
+
+article hr {
+  border: 1px dashed #e6e6e6;
+  width: 80%;
+  margin: 40px auto;
+}
+
+article img {
+  display: block;
+  margin: 10px auto;
+}
+
+#followme {
+  color: #666;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.footnotes {
+  font-size: 80%;
+}
+
+.pagination a#newerPosts {
+  float: left;
+  margin: 30px 0 20px 10px;
+  font-family: "Helvetica Neue", "Helvetica Neue Bold", "HelveticaNeue-Bold", "Segoe UI Bold", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.pagination a#olderPosts {
+  float: right;
+  margin: 30px 10px 20px 0;
+  font-family: "Helvetica Neue", "Helvetica Neue Bold", "HelveticaNeue-Bold", "Segoe UI Bold", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
