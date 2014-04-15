@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/css/main.css" type="text/css" />
 </head>
 <body>
-  <header><a href="/"><img src="/images/logo.png" width="326" height="67" alt="Undesigned" /></a></header>
+  <header><a href="/"><img src="/images/logo.png" width="287" height="59" alt="Undesigned" /></a></header>
   <main>
     {{ content }}
   </main>
@@ -23,35 +23,14 @@
     {% if page.url contains '/thoughts' %}
       <p>Thanks for reading! Subscribe to our <a href="/atom.xml">RSS</a>.</p>
     {% else %}
-      <p>Made with <span class="heart">&hearts;</span> in Chicago.</p>
+      <p>Made with <span id="heart">&hearts;</span> in Chicago.</p>
     {% endif %}
     <p id="navbar">
       <a href="/" title="Learn about Undesigned">About</a>
-      <a href="/contact" title="Get in touch">Contact</a>
       <a href="/thoughts" title="Read our thoughts on design, startups, and Chicago">Blog</a>
       <a href="http://twitter.com/undesignedio" title="Follow @undesignedio on Twitter" target="_blank">Twitter</a>
     </p>
-    <p>&copy; 2014 Undesigned. <span id="dayOfWeek"></span></p>
+    <p>&copy; 2014 Undesigned. <br class="mobile-only" />9 W Washington St, Chicago, IL 60606</p>
   </footer>
-
-  <script type="text/javascript">
-    // update calendar icon to current date
-    (function() {
-      var d = new Date()
-      , dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-      , hour = d.getHours()
-      , timeOfDay = "";
-      if (hour < 12)
-        timeOfDay = "morning";
-      else if (hour < 16)
-        timeOfDay = "afternoon";
-      else if (hour < 20)
-        timeOfDay = "evening";
-      else
-        timeOfDay = "night";
-
-      document.getElementById('dayOfWeek').innerHTML = "Happy " + dayNames[d.getDay()] + " " + timeOfDay + "!";
-    })();
-  </script>
 </body>
 </html>
