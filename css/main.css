@@ -433,14 +433,14 @@ footer p#navbar a {
 
 #front-container {
   background-image: url('/images/before_deliverable.png');
-  width: 179px;
-  height: 253px;
+  width: 180px;
+  height: 255px;
 }
 
 #back-container {
   background-image: url('/images/after_deliverable.png');
-  width: 178px;
-  height: 252px;
+  width: 180px;
+  height: 255px;
 }
 
 #layout-front {
@@ -471,7 +471,7 @@ footer p#navbar a {
 #usability-front .label {
   padding-right: 30px;
   padding-left: 2px;
-  left: -90px;
+  left: -92px;
 }
 #copy-front {
   margin-top: 40px;
@@ -481,7 +481,7 @@ footer p#navbar a {
 #copy-front .label {
   padding-left: 20px;
   padding-right: 2px;
-  left: 10px;
+  left: 8px;
 }
 
 #layout-back {
@@ -522,7 +522,7 @@ footer p#navbar a {
 #copy-back .label {
   padding-left: 20px;
   padding-right: 2px;
-  left: 10px;
+  left: 8px;
 }
 
 ul#howitworks, ul#team {
