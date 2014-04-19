@@ -815,6 +815,9 @@ article img {
     h3 {
       font-size: 25px;
     }
+    .desktop-only {
+      display: none;
+    }
 }
 @media only screen and (max-width: 720px) {
     ul#howitworks li, ul#team li {
