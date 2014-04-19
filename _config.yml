@@ -2,3 +2,6 @@ permalink: thoughts/:year/:month/:day/:title/
 markdown: kramdown
 paginate: 10
 paginate_path: 'thoughts/page:num'
+exclude: 
+  - make.sh
+  - README.md

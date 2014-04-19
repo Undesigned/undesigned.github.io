@@ -1,0 +1,20 @@
+{
+
+  "modules": {
+    "main": "main.css"
+  },
+
+  "root": "../_css",
+
+  "output-path": "../css/main.css",
+
+  "output-wrapper": [
+    "/*\n",
+    "  @copyright 2014 Undesigned. All Rights Reserved.\n",
+    " */\n\n",
+    "%output%"
+  ],
+
+  "charset": "UTF-8"
+
+}
