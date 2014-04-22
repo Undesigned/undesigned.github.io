@@ -1,7 +1,7 @@
-permalink: thoughts/:year/:month/:day/:title/
+permalink: thoughts/:title-:i_month:year/
 markdown: kramdown
 paginate: 10
-paginate_path: 'thoughts/page:num'
+paginate_path: 'thoughts/:num'
 exclude: 
   - make.sh
   - README.md
